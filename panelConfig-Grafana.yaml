@@ -1,0 +1,110 @@
+#------------------------------------------------------------------------------
+# YAML Aliases to simplify maintenance
+
+anchorLinks:
+  - link: &grafana-home
+      url: "https://grafana.com/"
+      params: "time"
+
+#------------------------------------------------------------------------------
+# Panel Config
+
+cellIdPreamble: "cell-"
+cells:
+  # AMG API (grupo)
+  amg-api:
+    label:
+      separator: "cr"
+      units: ""
+      decimalPoints: 0
+    fillColor:
+      gradientMode: "hue"
+      thresholds:
+        - {color: "#FFCC99", level: 0}
+        - {color: "#FF9933", level: 100}
+    # link:
+    #   url: "https://seusistema/amg-api"
+
+  # AMG APP (grupo)
+  amg-app:
+    label:
+      separator: "cr"
+      units: ""
+      decimalPoints: 0
+    fillColor:
+      gradientMode: "hue"
+      thresholds:
+        - {color: "#CCCCFF", level: 0}
+        - {color: "#B266FF", level: 100}
+    # link:
+    #   url: "https://seusistema/amg-app"
+
+  # AMG Entrega (grupo)
+  amg-entrega:
+    label:
+      separator: "cr"
+      units: ""
+      decimalPoints: 0
+    fillColor:
+      gradientMode: "hue"
+      thresholds:
+        - {color: "#fff2cc", level: 0}
+        - {color: "#d6b656", level: 100}
+    # link:
+    #   url: "https://seusistema/amg-entrega"
+
+  # Amazon S3 (grupo)
+  aws-s3-cloud:
+    label:
+      separator: "cr"
+      units: ""
+      decimalPoints: 0
+    fillColor:
+      gradientMode: "hue"
+      thresholds:
+        - {color: "#E05243", level: 0}
+        - {color: "#B266FF", level: 100}
+    link:
+      url: "https://aws.amazon.com/s3/"
+
+  # Protheus Oficial (grupo)
+  p12-oficial-2:
+    label:
+      separator: "cr"
+      units: ""
+      decimalPoints: 0
+    fillColor:
+      gradientMode: "hue"
+      thresholds:
+        - {color: "#dae8fc", level: 0}
+        - {color: "#6c8ebf", level: 100}
+    # link:
+    #   url: "https://seusistema/protheus"
+
+  # Web Service (grupo)
+  p12-ws-oficial:
+    label:
+      separator: "cr"
+      units: ""
+      decimalPoints: 0
+    fillColor:
+      gradientMode: "hue"
+      thresholds:
+        - {color: "#d5e8d4", level: 0}
+        - {color: "#82b366", level: 100}
+    # link:
+    #   url: "https://seusistema/webservice"
+
+  # Serviço Load S3 (grupo)
+  aws-s3-service:
+    label:
+      separator: "cr"
+      units: ""
+      decimalPoints: 0
+    fillColor:
+      gradientMode: "hue"
+      thresholds:
+        - {color: "#E05243", level: 0}
+        - {color: "#B266FF", level: 100}
+    # link:
+    #   url: "https://seusistema/load-s3"
